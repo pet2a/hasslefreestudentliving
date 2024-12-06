@@ -1,0 +1,27 @@
+{% extends 'starter-page.html' %}
+{% load static %}
+{% block body %}
+
+    <table class="table table-secondary table-hover table-bordered border-primary">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Message</th>
+        <th>Action</th>
+    </tr>
+    {% for y in  contact%}
+        <tr>
+            <td>{{ y.name }}</td>
+            <td>{{ y.email }}</td>
+            <td>{{ y.message }}</td>
+            <td>
+                <a href="/dele/{{ y.id }}" class="btn btn-primary">DELETE</a>
+            </td>
+
+        </tr>
+
+    {% endfor %}
+
+    </table>
+
+{% endblock %}

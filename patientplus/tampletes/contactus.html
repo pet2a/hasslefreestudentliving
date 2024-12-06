@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contactus</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+
+</head>
+<body>
+
+<h2 class="text-danger text-center">Contact Us!</h2>
+<a href="{% url 'home' %}" class="btn btn-primary">Homepage</a>
+<a href="{% url 'about' %}" class="btn btn-outline-danger">About</a>
+<a href="{% url 'services' %}" class="btn btn-outline-success">Services</a>
+
+<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt dolorem explicabo id, impedit itaque ratione? Autem ducimus eaque enim et harum modi, mollitia porro quaerat quisquam quo sunt ullam?</span><span>Accusamus aliquam at, excepturi facere labore magnam maiores officiis, quaerat recusandae totam ut voluptates! Adipisci aliquam debitis deserunt doloremque eveniet ipsum, itaque nesciunt obcaecati officia vero voluptatem, voluptatibus. Esse, velit!</span><span>Aliquam eum explicabo in incidunt inventore magni mollitia nostrum? Commodi delectus ipsa ipsum quasi quia reiciendis repudiandae sed tempora veritatis voluptatem. Distinctio fuga laudantium maiores nostrum perferendis perspiciatis saepe tempore?</span></p>
+
+<img src="{% static 'assets/lance.jpg' %}" alt=" ">
+<img src="{% static 'assets/natalia.jpg' %}" alt="">
+</body>
+</html>

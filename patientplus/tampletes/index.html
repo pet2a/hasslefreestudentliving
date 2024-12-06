@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homepage</title>
+    
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <style>
+        h1{
+            text-align: center;
+            background-color: black;
+            color: aliceblue;
+            font-size: 80px;
+            text-shadow: 12px 9px 12px greenyellow;
+        }
+
+    </style>
+</head>
+<body>
+<h1>WELCOME TO PATIENT PLUS</h1>
+<a href="{% url 'about' %}">About</a>
+<a href="{% url 'contactus' %}">Contact-us</a>
+<a href="{% url 'services' %}">Services</a>
+
+
+<p><span>Electronic Health Records(EHR) are gaining a lot of popularity all over the world.
+    The current EHR systems however have their fair share of problems related to privacy and security. We have proposed a mechanism which provides a solution to most of these problems. Using a permissioned Ethereum blockchain allows the hospitals and patients across the world to be connected to each other.
+    Our mechanism uses a combination of symmetric and asymmetric key cryptography to ensure the secure storage and selective access of records. It gives patients full control over their health records and also allows them to grant or revoke a hospital's access to his/her records.
+    We have used IPFS(inter planetary file system) to store records which has the advantage of being distributed and ensures immutability of records.
+    The proposed model also maintains the statistics of diseases without violating the privacy of any patient.</span></p>
+<img src="{% static 'assets/andrey.jpg' %}" alt="">
+<img src="{% static 'assets/lance.jpg' %}" alt="">
+<p><span>Electronic Health Records(EHR) are gaining a lot of popularity all over the world.
+    The current EHR systems however have their fair share of problems related to privacy and security. We have proposed a mechanism which provides a solution to most of these problems. Using a permissioned Ethereum blockchain allows the hospitals and patients across the world to be connected to each other.
+    Our mechanism uses a combination of symmetric and asymmetric key cryptography to ensure the secure storage and selective access of records.
+    It gives patients full control over their health records and also allows them to grant or revoke a hospital's access to his/her records. We have used IPFS(inter planetary file system) to store records which has the advantage of being distributed and ensures immutability of records.
+    The proposed model also maintains the statistics of diseases without violating the privacy of any patient.</span></p>
+</body>
+</html>
